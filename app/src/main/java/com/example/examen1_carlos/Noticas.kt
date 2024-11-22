@@ -53,6 +53,7 @@ class Noticas : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
         listViewNoticias.setOnClickListener {
 
+            // se manda el titular a la siguiente
             val intentDetallesNoticias = Intent(application, Detalles_noticias:: class.java)
             intentDetallesNoticias.putExtra("noticias", listViewNoticias.isSelected.toString())
 
