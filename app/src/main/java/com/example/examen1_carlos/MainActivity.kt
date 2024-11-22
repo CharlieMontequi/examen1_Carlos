@@ -14,15 +14,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val bottonNoticias = findViewById<Button>(R.id.buttonIconoNoticias)
-
         val imagenButtonNoticas = findViewById<ImageButton>(R.id.imageButtonNoticias)
 
-
-        bottonNoticias.setOnClickListener {
+        imagenButtonNoticas.setOnClickListener {
             val intentInicioNoticias = Intent(application, Noticas:: class.java)
             startActivity(intentInicioNoticias)
         }
-
     }
 }
