@@ -51,6 +51,14 @@ class Noticas : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         val adaptadorList = ArrayAdapter(this, android.R.layout.simple_list_item_1, titularesNoticias)
         listViewNoticias.adapter =adaptadorList
 
+        listViewNoticias.setOnClickListener {
+
+            val intentDetallesNoticias = Intent(application, Detalles_noticias:: class.java)
+            intentDetallesNoticias.putExtra("noticias", listViewNoticias.isSelected.toString())
+
+            startActivity(intentDetallesNoticias)
+        }
+
 
 
     }
@@ -105,8 +113,7 @@ class Noticas : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
 
     override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-        val intentDetallesNoticias = Intent(application, Detalles_noticias:: class.java)
-        startActivity(intentDetallesNoticias)
+
 
     }
 

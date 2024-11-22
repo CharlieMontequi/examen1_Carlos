@@ -1,6 +1,9 @@
 package com.example.examen1_carlos
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.AutoCompleteTextView.Validator
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -22,6 +25,20 @@ class Detalles_noticias: AppCompatActivity() {
             val noticiaGuardada = savedInstanceState.getString(CLAVE_TEXTVIEWNOTICIA)
             textViewTitulo.text= titloGuardado
             textViewNoticia.text=noticiaGuardada
+        }
+         val intent = Intent()
+
+        val auxiliarNombre = getIntent().getStringExtra("noticias")
+        textViewTitulo.text= auxiliarNombre
+
+        textViewNoticia.text=getString(R.string.cultura)
+
+
+        val buttonCompartir = findViewById<Button>(R.id.buttonCompartir)
+
+        buttonCompartir.setOnClickListener {
+            //intent de compartir
+
         }
 
     }

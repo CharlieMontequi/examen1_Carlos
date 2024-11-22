@@ -14,4 +14,9 @@
         <item>Economía</item>
         <item>cultura</item>
     </string-array>
+
+    <string name="deportes">mira soy una noticia de deporstes</string>
+    <string name="politica">soy un error como institucion</string>
+    <string name="cultura">mira soy una noticia de cultura</string>
+    <string name="economia">mira soy una noticia de economia</string>
 </resources>

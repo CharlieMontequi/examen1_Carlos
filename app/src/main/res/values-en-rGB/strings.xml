@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-
+    <string name="deportes">look Im a sports news</string>
+    <string name="politica">I am a mistake as an institution</string>
+    <string name="cultura">look Im a culture news</string>
+    <string name="economia">look Im an economic news</string>
 </resources>
