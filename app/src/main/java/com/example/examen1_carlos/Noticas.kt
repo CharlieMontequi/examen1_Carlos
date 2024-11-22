@@ -1,6 +1,7 @@
 package com.example.examen1_carlos
 
 import android.content.Context
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -49,6 +50,7 @@ class Noticas : AppCompatActivity(), AdapterView.OnItemSelectedListener {
         // como el list no se modifica se puede usar el layout propio de android
         val adaptadorList = ArrayAdapter(this, android.R.layout.simple_list_item_1, titularesNoticias)
         listViewNoticias.adapter =adaptadorList
+
 
 
     }
@@ -103,7 +105,8 @@ class Noticas : AppCompatActivity(), AdapterView.OnItemSelectedListener {
 
 
     override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-
+        val intentDetallesNoticias = Intent(application, Detalles_noticias:: class.java)
+        startActivity(intentDetallesNoticias)
 
     }
 

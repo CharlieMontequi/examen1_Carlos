@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">examen1_Carlos</string>
+    <string-array name="titulares">
+        <item>Todas las noticias</item>
+        <item>noticia de politica</item>
+        <item>noticia de deporte</item>
+        <item>noticia de Economía</item>
+        <item>noticia de cultura</item>
+    </string-array>
+
+    <string-array name="noticas">
+        <item>politica</item>
+        <item>deporte</item>
+        <item>Economía</item>
+        <item>cultura</item>
+    </string-array>
 </resources>
